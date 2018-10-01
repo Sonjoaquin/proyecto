@@ -11,7 +11,7 @@ echo 'El resultado de ' . $numero . ' ! es' . $resultado . '<br>';
 $resultado = 1;
 
 for ($i=1; $i <= $numero; $i++) {
-	$resultado = $resultado * $i;
+	$resultado = $resultado *= $i;
 }
 
 echo 'El resultado de ' . $numero . ' ! es' . $resultado . '<br>';
