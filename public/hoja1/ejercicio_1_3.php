@@ -11,4 +11,4 @@ echo 'El área de la circunferencia es ' . round($area, 4) . ' cm2.<br>';
 
 <br>
 <br>
-<a href="index.php">Regresar al menú</a>
+<a href="/index.php">Regresar al menú</a>

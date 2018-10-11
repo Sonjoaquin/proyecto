@@ -7,4 +7,4 @@ echo 'La cantidad de ' . $pesetas . ' pesetas son ' . $euros . '€';
 
 <br>
 <br>
-<a href="index.php">Regresar al menú</a>
+<a href="/index.php">Regresar al menú</a>
