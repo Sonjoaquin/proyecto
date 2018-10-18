@@ -14,7 +14,7 @@ abstract class Plantilla
   {
     $this->htmlGenerado = $this->html;
     foreach ($diccionario as $key => $value) {
-        $this->htmlGenerado = str_replace("%$key%", $value,$this->htmlGenerado);
+        $this->htmlGenerado = str_replace("%$key%", $value, $this->htmlGenerado);
     }
   }
   protected abstract function render();

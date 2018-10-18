@@ -16,7 +16,7 @@ $html = '<!DOCTYPE html>
   </body>
 </html>';
 $diccionario = [
-                "nombre" => "Pepe",
+                "nombre" => "Joaquín",
                 "animo" => "horny",
                 "ciudad" => "Cuenca"
                 ];

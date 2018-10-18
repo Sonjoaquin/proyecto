@@ -6,7 +6,7 @@ class MigasPan
 
   public function __construct($separador = '>')
   {
-    $this->$separador = $separador;
+    $this->separador = $separador;
   }
 
   public function agregaNodo($texto, $ruta)
@@ -22,7 +22,7 @@ class MigasPan
           $salida .= $enlace->mostrar();
 
       if ($indice != count($this->nodos) -1) {
-          $salida .= ' ' . $this->$separador . ' ';
+          $salida .= ' ' . $this->separador . ' ';
       }
     }
     return $salida;
