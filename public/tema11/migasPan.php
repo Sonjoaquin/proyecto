@@ -19,13 +19,12 @@ class MigasPan
     $salida = '';
 
     foreach ($this->nodos as $indice => $enlace) {
-      $salida .= $enlace->mostrar();
+          $salida .= $enlace->mostrar();
 
-      if ($indice != count($this->nodos) -1){
+      if ($indice != count($this->nodos) -1) {
           $salida .= ' ' . $this->$separador . ' ';
       }
     }
-
     return $salida;
   }
 }

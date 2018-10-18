@@ -78,6 +78,7 @@
 		<ul>
 			<li><a href="/tema11/ejemplo1.php">Ejemplo1 clase Freelance</a></li>
 			<li><a href="/tema11/ejemplo2.php">Ejemplo2 migas de pan</a></li>
+			<li><a href="/tema11/ejemplo4.php">Ejemplo4</a></li>
 		</ul>
 	</li>
 </ul>

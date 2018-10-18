@@ -1,8 +1,10 @@
 <?php
+include "etiqueta.php";
 include "enlace.php";
 include 'migasPan.php';
+include 'MigasPanContenedor.php';
 
-$migas = new MigasPan('=>');
+$migas = new MigasPanContenedor('=>',"section");
 
 $migas->agregaNodo("Home", "https://iescierva.net");
 $migas->agregaNodo("Noticias", "https://iescierva.net/noticias");
