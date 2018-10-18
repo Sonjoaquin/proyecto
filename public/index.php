@@ -82,4 +82,12 @@
 			<li><a href="/tema11/ejemplo4.php">Ejemplo4</a></li>
 		</ul>
 	</li>
+	<br><br><br><br>
+	<li>
+		<h3>Test login y registro</h3>
+		<ul>
+			<li><a href="/test/index.php">Página principal</a></li>
+			<li><a href="/tema6/nuevo.php">Nuevo</a></li>
+		</ul>
+	</li>
 </ul>
