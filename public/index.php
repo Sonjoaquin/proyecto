@@ -78,16 +78,9 @@
 		<ul>
 			<li><a href="/tema11/ejemplo1.php">Ejemplo1 clase Freelance</a></li>
 			<li><a href="/tema11/ejemplo2.php">Ejemplo2 migas de pan</a></li>
-			<li><a href="/tema11/ejemplo3.php">Ejemplo3 migas contenedor</a></li>
-			<li><a href="/tema11/ejemplo4.php">Ejemplo4</a></li>
-		</ul>
-	</li>
-	<br><br><br><br>
-	<li>
-		<h3>Test login y registro</h3>
-		<ul>
-			<li><a href="/test/index.php">Página principal</a></li>
-			<li><a href="/tema6/nuevo.php">Nuevo</a></li>
+			<li><a href="/tema11/ejemplo3.php">Ejemplo3 herencia migas de pan</a></li>
+			<li><a href="/tema11/ejemplo4.php">Ejemplo4: Clases abstractas, renderizar plantillas</a></li>
+			<li><a href="/tema11/ejemplo5.php">Ejemplo 5: Carrito de la compra</a></li>
 		</ul>
 	</li>
 </ul>
