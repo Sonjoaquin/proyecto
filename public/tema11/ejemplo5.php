@@ -44,6 +44,7 @@ spl_autoload_register(function($clase)
 
     $carrito->mostrar();
 ?>
-
+<br><br>
+<p><a href="destroy.php">Eliminar Sesión</a>
   </body>
 </html>
