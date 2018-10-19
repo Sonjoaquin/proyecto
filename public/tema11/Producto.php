@@ -45,6 +45,14 @@ class Producto implements iEnCarrito
     {
       return true;
     }
+
+    public function __toString()
+    {
+      $salida = "<br>" . $this->nombre . " " . $this->precio . " &euro;";
+      $salida .= " <a href=\"?accion=comprar&producto=" . urlencode(serialize($this)) . "\">Comprar</a>";
+
+      return $salida;
+    }
 }
 
  ?>

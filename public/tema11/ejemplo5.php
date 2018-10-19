@@ -20,7 +20,7 @@ spl_autoload_register(function($clase)
     $p2 = new Producto("Cereales de chocolate", 5.99);
     $p3 = new Producto("Servilletas 20x20", 1.2);
 
-    $carrito = new Carrito();
+    $carrito = Carrito::getCarrito();
     $carrito->meter($p1);
     $carrito->meter($p2);
     $carrito->meter($p3);
@@ -43,6 +43,11 @@ spl_autoload_register(function($clase)
     $carrito->meter($pack1);
 
     $carrito->mostrar();
+
+    echo "<br><br>";
+    echo $p1;
+    echo $p2;
+    echo $p3;
 ?>
 <br><br>
 <p><a href="destroy.php">Eliminar Sesión</a>

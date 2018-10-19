@@ -4,6 +4,22 @@ class Carrito
 {
     private $productos = [];
 
+    private function __construct()
+    {
+
+    }
+
+    public static function getCarrito()
+    {
+      if (isset($_SESSION['micarrito']))
+      {
+        return  $_SESSION['micarrito'];
+      }
+      $carrito = new Carrito();
+      $_SESSION['micarrito'] = $carrito;
+      return $carrito;
+    }
+
     public function meter($producto)
     {
         $this->productos[] = $producto;
