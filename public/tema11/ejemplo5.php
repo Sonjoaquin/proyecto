@@ -4,6 +4,7 @@ spl_autoload_register(function($clase)
   $archivo = $clase . '.php';
   include $archivo;
 });
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -21,15 +22,15 @@ spl_autoload_register(function($clase)
     $p3 = new Producto("Servilletas 20x20", 1.2);
 
     $carrito = Carrito::getCarrito();
-    $carrito->meter($p1);
-    $carrito->meter($p2);
-    $carrito->meter($p3);
-    $carrito->quitar(1);
+    //$carrito->meter($p1);
+    //$carrito->meter($p2);
+    //$carrito->meter($p3);
+    //$carrito->quitar(1);
 
-    $carrito->masUnidad(0);
-    $carrito->masUnidad(0);
-    $carrito->menosUnidad(2);
-    $carrito->menosUnidad(2);
+    //$carrito->masUnidad(0);
+    //$carrito->masUnidad(0);
+    //$carrito->menosUnidad(2);
+    //$carrito->menosUnidad(2);
 
     $d1 = new Descuento("Código XDD12233", 2);
 
@@ -48,6 +49,9 @@ spl_autoload_register(function($clase)
     echo $p1;
     echo $p2;
     echo $p3;
+    echo $d1;
+    echo $pack1;
+    $pack1->detalles();
 ?>
 <br><br>
 <p><a href="destroy.php">Eliminar Sesión</a>

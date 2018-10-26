@@ -1,6 +1,8 @@
 <?php
 class Descuento implements iEnCarrito
 {
+  use EnlaceComprar;
+
   private $motivo;
   private $descuento;
 
@@ -24,7 +26,7 @@ class Descuento implements iEnCarrito
   {
       return $this->precio();
   }
-/*
+
   public function masUnidad()
   {
       return false;
@@ -34,10 +36,18 @@ class Descuento implements iEnCarrito
   {
       return false;
   }
-*/
+
   public function permiteUnidades()
   {
       return false;
+  }
+
+  public function __toString()
+  {
+    $salida = '<br>' . $this->motivo . " " . $this->descuento . "&euro;";
+    $salida .= " <a href=\"?accion=comprar&producto=" . urlencode(serialize($this)) . "\">Comprar</a>";
+
+    return $salida;
   }
 }
 

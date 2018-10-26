@@ -1,6 +1,9 @@
 <?php
 class Pack implements iEnCarrito
 {
+  use MasMenos;
+  use EnlaceComprar;
+
   private $productosPack;
   private $cantidad = 1;
 
@@ -66,6 +69,20 @@ class Pack implements iEnCarrito
     }
   }
   */
+  public function detalles()
+  {
+    foreach ($this->productosPack as $producto) {
+      echo $producto;
+    }
+  }
+
+  public function __toString()
+  {
+    $salida = '<br>Pack' . $this->precio() . "&euro;";
+    $salida .= " <a href=\"?accion=comprar&producto=" . urlencode(serialize($this)) . "\">Comprar</a>";
+
+    return $salida;
+  }
 }
 
  ?>

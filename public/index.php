@@ -83,4 +83,11 @@
 			<li><a href="/tema11/ejemplo5.php">Ejemplo 5: Carrito de la compra</a></li>
 		</ul>
 	</li>
+	<li>
+		<h3>tema 12</h3>
+		<ul>
+			<li><a href="/tema12/ejemplo1.php">ejemplo conexión a BD </a></li>
+			<li><a href="/tema12/index.php">ejemplo completo </a></li>
+		</ul>
+	</li>
 </ul>

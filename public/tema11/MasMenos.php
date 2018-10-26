@@ -15,4 +15,4 @@ trait MasMenos
       $this->cantidad--;
     }
 }
- ?>
+}

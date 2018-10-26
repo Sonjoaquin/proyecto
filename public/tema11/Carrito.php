@@ -2,6 +2,8 @@
 
 class Carrito
 {
+    use Persistir;
+
     private $productos = [];
 
     private function __construct()
@@ -13,10 +15,14 @@ class Carrito
     {
       if (isset($_SESSION['micarrito']))
       {
-        return  $_SESSION['micarrito'];
+        $carrito =  $_SESSION['micarrito'];
+      } elseif (carrito = self::traeCookie('carrito')) {
+          $_SESSION['micarrito'] = $carrito;
+      } else {
+          $carrito = new Carrito();
+          $_SESSION['micarrito'] = $carrito;
       }
-      $carrito = new Carrito();
-      $_SESSION['micarrito'] = $carrito;
+      $carrito->operaciones();
       return $carrito;
     }
 
@@ -70,5 +76,24 @@ class Carrito
     public function menosUnidad($indice)
     {
         $this->productos[$indice]->menosUnidad();
+    }
+
+    private function operaciones()
+    {
+      if (isset($_GET['accion'])) {
+        if($_GET['accion'] == "comprar") {
+          $elem = unserialize($_GET['elemento']);
+          $this->meter($elem);
+        }
+        if ($_GET['accion'] == 'eliminar') {
+          $this->quitar($_GET['indice']);
+        }
+        if ($_GET['accion'] == 'menosUnidad') {
+          $this->menosUnidad($_GET['indice']);
+        }
+        if ($_GET['accion'] == 'masUnidad') {
+          $this->masUnidad($_GET['indice']);
+        }
+      }
     }
 }
