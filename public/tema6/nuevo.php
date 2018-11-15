@@ -21,11 +21,22 @@
 		} elseif ( strlen($_POST['nombre']) < 3 ) {
 			$errores['nombre'] = "Campo nombre demasiado corto";
 		}
+
+
+	    if ( ! isset ($_POST['apellidos'])) {
+            $errores['apellidos'] = 'No he recibido los apellidos';
+        } elseif (strlen($_POST['apellidos']) < 3 ) {
+            $errores['apellidos'] = 'Campo apellido demasiado corto';
+        }
+
+
 		if ( ! isset($_POST['email']) ) {
 			$errores['email'] = "No he recibido el email";
 		} elseif ( strlen($_POST['email']) < 6) {
 			$errores['email'] = "El email no es válido";
 		}
+
+
 		if ( ! isset($_POST['clave1']) || ! isset($_POST['clave2'])) {
 			$errores['clave1'] = "No he recibido ambas claves";
 		} else {

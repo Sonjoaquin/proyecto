@@ -90,4 +90,11 @@
 			<li><a href="/tema12/index.php">ejemplo completo </a></li>
 		</ul>
 	</li>
+    <li>
+        <h3>Pruebas login</h3>
+        <ul>
+            <li><a href="loginregistro/index.php">Pruebas login PDO </a></li>
+            <li><a href="EXAMENTEST/index.php">Pruebas login PDO </a></li>
+        </ul>
+    </li>
 </ul>

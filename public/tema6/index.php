@@ -26,6 +26,11 @@
     } elseif (strlen($_POST['nombre']) < 3 ) {
       $errores['nombre'] = 'Campo nombre demasiado corto';
     }
+    if ( ! isset ($_POST['apellido'])) {
+        $errores['apellido'] = 'No he recibido el apellido';
+    } elseif (strlen($_POST['apellido']) < 3 ) {
+        $errores['apellido'] = 'Campo apellido demasiado corto';
+    }
     if (! isset($_POST['email'])) {
       $errores['email'] = 'No he recibido el email';
     } elseif (strlen($_POST['email']) < 6) {

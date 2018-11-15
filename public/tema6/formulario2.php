@@ -7,12 +7,13 @@
 			>
 			<?php mostrar_error_campo('nombre',$errores) ?>
 	</div>
-	<div class="form-group">
-		<label for="nombre">Nombre</label>
-		<input type="text" name="nombre"
-		<?php mostrar_campo('nombre') ?>
+
+	<p>
+		<label for="apellidos">Apellidos</label>
+		<input type="text" name="apellidos"
+		<?php mostrar_campo('apellidos') ?>
 		>
-		<?php mostrar_error_campo('nombre', $errores) ?>
+		<?php mostrar_error_campo('apellidos', $errores) ?>
 	</p>
 	<p>
 		<label for="email">Email</label>
